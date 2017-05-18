@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Email Validation With DB</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div id="wrapper">
+        <p class="error_message">{{ session['error_message'] }}</p>
+        <form action="/process" method="post">
+            <label for="email">Email Address:</label>
+            <input type="text" name="email">
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    </body>
+</html>

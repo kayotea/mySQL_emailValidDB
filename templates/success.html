@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Email Validation With DB: Success Page</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div id="wrapper">
+        <p class="success_message">The email address you entered ({{ session['email'] }}) is a VALID email address! Thank you!</p>
+        <h4><u>Email Addresses Entered:</u></h4>
+        <table>
+            {% for email in emails%}
+                <tr>
+                    <td>{{ email['email'] }}</td>
+                    <td>{{ email['created_at'] }}</td>
+                    <td><a href="/delete/{{email['id']}}">Delete</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+        <p><a href="/">Add Another Email</a></p>
+        </div>
+    </body>
+</html>

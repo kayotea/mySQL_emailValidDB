@@ -1,0 +1,28 @@
+#wrapper{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.success_message{
+    color: white;
+    background-color: lightseagreen;
+    font-size: 120%;
+    padding: 10px;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+.error_message{
+    color: white;
+    background-color: lightcoral;
+    font-size: 120%;
+    padding: 10px;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+label{
+    width: 180px;
+    padding-right:30px;
+}
+input, label{
+    float: left;
+}
